@@ -1,45 +1,58 @@
 #!/usr/bin/env python3
-"""Optional installer for open-licensed fonts from google/fonts. Run only when needed."""
+"""Explicit, optional installer for OFL Google Fonts; never commit font binaries."""
 from pathlib import Path
 from urllib.parse import quote
 from urllib.request import urlopen
+from hashlib import sha256
+from subprocess import run
 import argparse
-import hashlib
-import subprocess
 
-FONTS = {
-    "inter": "Inter[opsz,wght].ttf",
-    "manrope": "Manrope[wght].ttf",
-    "lora": "Lora[wght].ttf",
-    "dmsans": "DMSans[opsz,wght].ttf",
-    "plusjakartasans": "PlusJakartaSans[wght].ttf",
-    "playfairdisplay": "PlayfairDisplay[wght].ttf",
-    "ibmplexsans": "IBMPlexSans[wdth,wght].ttf",
+GOOGLE_FONTS_COMMIT="45e3d5269e4a17d823f6d84470bc084dc5ae46f6"
+BASE="https://raw.githubusercontent.com/google/fonts/"+GOOGLE_FONTS_COMMIT+"/ofl/"
+FONTS={
+ "inter":"Inter[opsz,wght].ttf",
+ "manrope":"Manrope[wght].ttf",
+ "lora":"Lora[wght].ttf",
+ "dmsans":"DMSans[opsz,wght].ttf",
+ "plusjakartasans":"PlusJakartaSans[wght].ttf",
+ "playfairdisplay":"PlayfairDisplay[wght].ttf",
+ "ibmplexsans":"IBMPlexSans[wdth,wght].ttf",
+ "librebaskerville":"LibreBaskerville[wght].ttf",
+ "montserrat":"Montserrat[wght].ttf",
+ "sourcesans3":"SourceSans3[wght].ttf",
 }
+def get(url):
+    with urlopen(url,timeout=40) as r:
+        return r.read(5_000_001)
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--install", action="store_true", help="explicitly download and install fonts")
-    args = parser.parse_args()
-    folder = Path.home() / ".local/share/fonts/inttrade"
+    p=argparse.ArgumentParser()
+    p.add_argument("--install",action="store_true")
+    args=p.parse_args()
     if not args.install:
-        print("Dry run only. Fonts from https://github.com/google/fonts (SIL OFL):")
-        for name, file in FONTS.items(): print(name, file)
-        print("Run with --install only if network and installation are permitted.")
+        print("Dry-run: 10 open-license families from a pinned Google Fonts commit:")
+        print(*FONTS.items(),sep="\n")
+        print("Use --install only where outbound network access and local font installation are allowed.")
         return
-    folder.mkdir(parents=True, exist_ok=True)
-    for family, filename in FONTS.items():
-        url = "https://raw.githubusercontent.com/google/fonts/main/ofl/" + family + "/" + quote(filename)
-        with urlopen(url, timeout=30) as response:
-            data = response.read(5000000)
-        if len(data) < 30000 or data[:4] not in (bytes([0,1,0,0]), b"OTTO", b"ttcf"):
-            raise RuntimeError("Invalid or unexpectedly small font from " + url)
-        dest = folder / filename
-        dest.write_bytes(data)
-        print("INSTALLED", filename, "sha256=" + hashlib.sha256(data).hexdigest())
+    dest=Path.home()/".local/share/fonts/inttrade"
+    dest.mkdir(parents=True,exist_ok=True)
+    for family,name in FONTS.items():
+        target=dest/name
+        if target.is_file() and target.stat().st_size>30000:
+            print("PRESENT",name)
+            continue
+        base=BASE+family+"/"
+        license_data=get(base+"OFL.txt")
+        if not license_data.startswith(b"SIL OPEN FONT LICENSE") and b"OPEN FONT LICENSE" not in license_data[:1000].upper():
+            raise RuntimeError("Cannot validate OFL license for "+family)
+        font=get(base+quote(name,safe=""))
+        if len(font)<30000 or font[:4] not in (b"OTTO",b"ttcf",bytes([0,1,0,0])):
+            raise RuntimeError("Invalid font data from "+base+name)
+        (dest/(family+"-OFL.txt")).write_bytes(license_data)
+        target.write_bytes(font)
+        print("INSTALLED",name,"sha256",sha256(font).hexdigest())
     try:
-        subprocess.run(["fc-cache","-f",str(folder)],check=True)
+        run(["fc-cache","-f",str(dest)],check=True,timeout=90)
     except FileNotFoundError:
-        print("fc-cache missing; manually refresh font cache if necessary.")
-    print("Fonts installed for THIS user only; Codex Cloud sessions may not persist them.")
-if __name__ == "__main__":
-    main()
+        print("WARN: fc-cache unavailable. Refresh font cache manually.")
+    print("Installed fonts for current user only; verify with fc-match and actual slide rendering.")
+if __name__=="__main__":main()
