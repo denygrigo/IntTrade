@@ -1,0 +1,41 @@
+{
+  "source": "studio/examples/research-data.json",
+  "synthetic": true,
+  "unit": "minutes",
+  "groups": {
+    "control": {
+      "n": 6,
+      "median": 41.5,
+      "mean": 41.833333333333336,
+      "min": 39,
+      "max": 45,
+      "sum": 251,
+      "values": [
+        42,
+        39,
+        45,
+        44,
+        40,
+        41
+      ]
+    },
+    "assisted": {
+      "n": 6,
+      "median": 30.5,
+      "mean": 30.666666666666668,
+      "min": 28,
+      "max": 34,
+      "sum": 184,
+      "values": [
+        31,
+        28,
+        34,
+        30,
+        29,
+        32
+      ]
+    }
+  },
+  "median_difference": 11.0,
+  "relative_difference": 0.26506024096385544
+}

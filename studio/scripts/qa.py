@@ -31,13 +31,16 @@ def evidence(data):
     for c in claims:
         cid=c.get("id"); kind=c.get("kind","fact")
         if not c.get("text"): findings.append(issue("CLAIM_TEXT","Missing claim text",claim=cid))
-        if kind in ("fact","synthetic"):
+        if kind in ("fact","source_reported","synthetic"):
             if not c.get("source_ids"): findings.append(issue("UNSUPPORTED_CLAIM","No supporting source",claim=cid))
             for sid in c.get("source_ids",[]):
                 if sid not in sources: findings.append(issue("BROKEN_SOURCE",f"Unknown source {sid}",claim=cid))
+            cited=[sources[sid] for sid in c.get('source_ids',[]) if sid in sources]
+            if cited and all(s.get('evidence_role')=='discovery_only' or s.get('support_status') in ('weak','unsupported','contradicted') for s in cited):
+                findings.append(issue('WEAK_REFERENCE','All cited references are discovery-only or explicitly assessed as insufficient',claim=cid))
             if kind=="synthetic" and not c.get("disclosure"):
                 findings.append(issue("UNLABELLED_DEMO","Synthetic data needs visible disclosure",claim=cid))
-        elif kind not in ("inference","recommendation","forecast","calculation"):
+        elif kind not in ("inference","recommendation","forecast","calculation","assumption","unknown"):
             findings.append(issue("CLAIM_KIND","Unknown claim kind",claim=cid))
         elif not c.get("basis"):
             findings.append(issue("CLAIM_BASIS","Non-factual claim needs basis",claim=cid))

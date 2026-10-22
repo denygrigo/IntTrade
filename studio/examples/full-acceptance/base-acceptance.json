@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "run_at_utc": "2026-10-22T00:54:33.353205+00:00",
+  "overall": "WARN",
+  "implementation": "WORKING LOCAL TOOLCHAIN",
+  "checks": [
+    {
+      "test": "A — runtime",
+      "status": "PASS",
+      "detail": "Existing toolchain reused; dependency installation not run."
+    },
+    {
+      "test": "B — reliability",
+      "status": "PASS",
+      "detail": "Hash skip, tamper recovery, two-failure breaker, explicit reset, timeout and missing output checks passed."
+    },
+    {
+      "test": "C — skill packaging",
+      "status": "PASS",
+      "detail": "Six workflow skills plus optional Humanizer, plugin manifest and AGENTS.md routing. New-session automatic invocation not exercised."
+    },
+    {
+      "test": "D — three presentation purposes",
+      "status": "PASS",
+      "detail": "3 PPTX, 18 slides, 3 actual-export PDFs, native text in all slides, editable chart workbooks and 18 PNG renders. Chart caches match source JSON."
+    },
+    {
+      "test": "E — injected errors",
+      "status": "PASS",
+      "detail": "Unsupported claim, 24/27 conflict, broken citation and 18/24 arithmetic defect detected; corrected fixture passes."
+    },
+    {
+      "test": "F — external references",
+      "status": "WARN",
+      "detail": "Live probes logged; three historical fallback Slidev images were inspected by the author; designer image access restricted. See reference ledger."
+    },
+    {
+      "test": "G — independent semantic/visual reviewer",
+      "status": "NOT TESTED",
+      "detail": "Separate artifact auditor ran; final author review must be tied to actual render hashes. No separate reviewer identity or model run is claimed."
+    }
+  ],
+  "slide_count": 18,
+  "unresolved_artifact_blockers": 0,
+  "independent_reviewer": null,
+  "limitations": [
+    "New-session skill routing not exercised",
+    "Designer portfolio image access restricted",
+    "PowerPoint desktop/iPhone rendering not tested",
+    "Current session disk changes are not an environment publication"
+  ]
+}

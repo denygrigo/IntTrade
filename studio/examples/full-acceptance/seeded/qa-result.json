@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "expected_failure": true,
+  "required_detected": [
+    "INCONSISTENT_NUMBER",
+    "PDF_TEXT_LOSS",
+    "UNSUPPORTED_CLAIM",
+    "WEAK_REFERENCE"
+  ],
+  "evidence": {
+    "status": "FAIL",
+    "scope": "Structured provenance and numeric consistency only; source entailment requires semantic review",
+    "claims": 4,
+    "sources": 1,
+    "findings": [
+      {
+        "severity": "blocking",
+        "code": "SOURCE_NOT_OPENED",
+        "message": "Source not opened",
+        "source": "weak"
+      },
+      {
+        "severity": "blocking",
+        "code": "UNSUPPORTED_CLAIM",
+        "message": "No supporting source",
+        "claim": "unsupported"
+      },
+      {
+        "severity": "blocking",
+        "code": "WEAK_REFERENCE",
+        "message": "All cited references are discovery-only or explicitly assessed as insufficient",
+        "claim": "weakly-cited"
+      },
+      {
+        "severity": "blocking",
+        "code": "WEAK_REFERENCE",
+        "message": "All cited references are discovery-only or explicitly assessed as insufficient",
+        "claim": "wrong-number-0"
+      },
+      {
+        "severity": "blocking",
+        "code": "WEAK_REFERENCE",
+        "message": "All cited references are discovery-only or explicitly assessed as insufficient",
+        "claim": "wrong-number-1"
+      },
+      {
+        "severity": "blocking",
+        "code": "INCONSISTENT_NUMBER",
+        "message": "Same metric/scope has conflicting values: [12, 15]",
+        "metric": [
+          "n",
+          "observations",
+          "test",
+          "fictional",
+          "same group"
+        ]
+      }
+    ]
+  },
+  "overflow": {
+    "status": "FAIL",
+    "scope": "Artifact structure and rendered text; visual/semantic review separate",
+    "slides": [
+      {
+        "slide": 1,
+        "text_runs": 4,
+        "charts": 0,
+        "text": "QA SEED / INTENTIONAL DEFECTS / DO NOT USE Все компании удваивают прибыль. В группе одновременно 12 и 15 наблюдений. Источник: https://example.org — общая страница без подтверждающего фрагмента. Overflow sentinel 000 Overflow sentinel 001 Overflow sentinel 002 Overflow sentinel 003 Overflow sentinel 004 Overflow sentinel 005 Overflow sentinel 006 Overflow sentinel 007 Overflow sentinel 008 Overflow sentinel 009 Overflow sentinel 010 Overflow sentinel 011 Overflow sentinel 012 Overflow sentinel 013 Overflow sentinel 014 Overflow sentinel 015 Overflow sentinel 016 Overflow sentinel 017 Overflow sentinel 018 Overflow sentinel 019 Overflow sentinel 020 Overflow sentinel 021 Overflow sentinel 022 Overflow sentinel 023 Overflow sentinel 024 Overflow sentinel 025 Overflow sentinel 026 Overflow sentinel 027 Overflow sentinel 028 Overflow sentinel 029 Overflow sentinel 030 Overflow sentinel 031 Overflow sentinel 032 Overflow sentinel 033 Overflow sentinel 034 Overflow sentinel 035 Overflow sentinel 036 Overflow sentinel 037 Overflow sentinel 038 Overflow sentinel 039 Overflow sentinel 040 Overflow sentinel 041 Overflow sentinel 042 Overflow sentinel 043 Overflow sentinel 044 Overflow sentinel 045 Overflow sentinel 046 Overflow sentinel 047 Overflow sentinel 048 Overflow sentinel 049 Overflow sentinel 050 Overflow sentinel 051 Overflow sentinel 052 Overflow sentinel 053 Overflow sentinel 054 Overflow sentinel 055 Overflow sentinel 056 Overflow sentinel 057 Overflow sentinel 058 Overflow sentinel 059 Overflow sentinel 060 Overflow sentinel 061 Overflow sentinel 062 Overflow sentinel 063 Overflow sentinel 064 Overflow sentinel 065 Overflow sentinel 066 Overflow sentinel 067 Overflow sentinel 068 Overflow sentinel 069 Overflow sentinel 070 Overflow sentinel 071 Overflow sentinel 072 Overflow sentinel 073 Overflow sentinel 074 Overflow sentinel 075 Overflow sentinel 076 Overflow sentinel 077 Overflow sentinel 078 Overflow sentinel 079 Overflow sentinel 080 Overflow sentinel 081 Overflow sentinel 082 Overflow sentinel 083 Overflow sentinel 084 Overflow sentinel 085 Overflow sentinel 086 Overflow sentinel 087 Overflow sentinel 088 Overflow sentinel 089 Overflow sentinel 090 Overflow sentinel 091 Overflow sentinel 092 Overflow sentinel 093 Overflow sentinel 094 Overflow sentinel 095 Overflow sentinel 096 Overflow sentinel 097 Overflow sentinel 098 Overflow sentinel 099 Overflow sentinel 100 Overflow sentinel 101 Overflow sentinel 102 Overflow sentinel 103 Overflow sentinel 104 Overflow sentinel 105 Overflow sentinel 106 Overflow sentinel 107 Overflow sentinel 108 Overflow sentinel 109 Overflow sentinel 110 Overflow sentinel 111 Overflow sentinel 112 Overflow sentinel 113 Overflow sentinel 114 Overflow sentinel 115 Overflow sentinel 116 Overflow sentinel 117 Overflow sentinel 118 Overflow sentinel 119 Overflow sentinel 120 Overflow sentinel 121 Overflow sentinel 122 Overflow sentinel 123 Overflow sentinel 124 Overflow sentinel 125 Overflow sentinel 126 Overflow sentinel 127 Overflow sentinel 128 Overflow sentinel 129 Overflow sentinel 130 Overflow sentinel 131 Overflow sentinel 132 Overflow sentinel 133 Overflow sentinel 134 Overflow sentinel 135 Overflow sentinel 136 Overflow sentinel 137 Overflow sentinel 138 Overflow sentinel 139 Overflow sentinel 140 Overflow sentinel 141 Overflow sentinel 142 Overflow sentinel 143 Overflow sentinel 144 Overflow sentinel 145 Overflow sentinel 146 Overflow sentinel 147 Overflow sentinel 148 Overflow sentinel 149 Overflow sentinel 150 Overflow sentinel 151 Overflow sentinel 152 Overflow sentinel 153 Overflow sentinel 154 Overflow sentinel 155 Overflow sentinel 156 Overflow sentinel 157 Overflow sentinel 158 Overflow sentinel 159 Overflow sentinel 160 Overflow sentinel 161 Overflow sentinel 162 Overflow sentinel 163 Overflow sentinel 164 Overflow sentinel 165 Overflow sentinel 166 Overflow sentinel 167 Overflow sentinel 168 Overflow sentinel 169 Overflow sentinel 170 Overflow sentinel 171 Overflow sentinel 172 Overflow sentinel 173 Overflow sentinel 174 Overflow sentinel 175 Overflow sentinel 176 Overflow sentinel 177 Overflow sentinel 178 Overflow sentinel 179 Overflow sentinel 180 Overflow sentinel 181 Overflow sentinel 182 Overflow sentinel 183 Overflow sentinel 184 Overflow sentinel 185 Overflow sentinel 186 Overflow sentinel 187 Overflow sentinel 188 Overflow sentinel 189 Overflow sentinel 190 Overflow sentinel 191 Overflow sentinel 192 Overflow sentinel 193 Overflow sentinel 194 Overflow sentinel 195 Overflow sentinel 196 Overflow sentinel 197 Overflow sentinel 198 Overflow sentinel 199 Overflow sentinel 200 Overflow sentinel 201 Overflow sentinel 202 Overflow sentinel 203 Overflow sentinel 204 Overflow sentinel 205 Overflow sentinel 206 Overflow sentinel 207 Overflow sentinel 208 Overflow sentinel 209 Overflow sentinel 210 Overflow sentinel 211 Overflow sentinel 212 Overflow sentinel 213 Overflow sentinel 214 Overflow sentinel 215 Overflow sentinel 216 Overflow sentinel 217 Overflow sentinel 218 Overflow sentinel 219",
+        "fonts": [
+          "DejaVu Sans"
+        ],
+        "rendered_text_coverage": 0.062
+      }
+    ],
+    "embedded_workbooks": 0,
+    "findings": [
+      {
+        "severity": "blocking",
+        "code": "PDF_TEXT_BOUNDS",
+        "message": "Rendered text outside PDF page",
+        "slide": 1,
+        "text": "Overflow sentinel 005"
+      },
+      {
+        "severity": "blocking",
+        "code": "PDF_TEXT_LOSS",
+        "message": "Rendered character coverage 6.2%",
+        "slide": 1
+      }
+    ]
+  }
+}

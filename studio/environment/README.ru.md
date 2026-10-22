@@ -6,7 +6,7 @@
 
 - Репозиторий: denygrigo/IntTrade; ветка: codex/research-design-studio-20261022.
 - Рабочий каталог: корень репозитория.
-- Setup: `bash scripts/bootstrap.sh`.
+- Setup: `bash scripts/bootstrap.sh --full`.
 - Node 24, Python 3.12; LibreOffice и DejaVu/Noto с кириллицей в образе.
 - Секреты: для локального конвейера не нужны. Не добавлять ключи «на всякий случай».
 - Пакетные домены: оставить действующий preset package_managers.
@@ -35,3 +35,13 @@ allowlist устранит авторизацию сайтов или огран
 Опубликуйте проверенную конфигурацию на компьютере/вебе и затем выберите её на
 iPhone. Коммит setup script не публикует окружение, не устанавливает глобальный
 плагин и не меняет разрешения приложений.
+
+При необходимости Inter/Lora добавьте целевой шаг:
+
+```bash
+python3 scripts/install_fonts.py --install --family inter --family lora --static --dest work/fonts
+```
+
+Рендер-команды должны использовать `FONTCONFIG_FILE` из вывода установщика.
+`acceptance_full.py` делает это сам. Это не изменение глобального Fontconfig.
+На устройстве пользователя наличие этих шрифтов проверяется отдельно.

@@ -6,6 +6,7 @@ For research, reports, presentations and visual communication, use the studio in
 Read only the relevant skill on demand from `.agents/skills/`:
 - research / primary sources / market analysis → `evidence-first-research`;
 - slides / deck / презентация → `presentation-art-director`, then `visual-document-studio`;
+- Excel / XLSX / Word / DOCX / PDF / charts → `visual-document-studio`, then `independent-quality-reviewer`;
 - images / references / brand visuals → the reference guide in `presentation-art-director/references/visual-asset-curation.md`;
 - business prose / text edits → `professional-writing-editor`; explicit humanization → `humanizer`;
 - final research or design deliverable → `independent-quality-reviewer`;
@@ -35,7 +36,10 @@ Run `qa.py` against final files; audit claim provenance separately. Deterministi
 QA cannot certify semantic truth or aesthetics. A second pass by the author is
 not an independent reviewer: report reviewer identity and unavailable checks.
 Do not spawn agents unless the user or higher-priority instructions authorize it.
-Release only with no unresolved blocking findings; keep FAIL/PARTIAL/NOT RUN honest.
+Release only with no unresolved blocking findings; report PASS / WARN / FAIL / NOT TESTED.
+Use `acceptance_full.py` for the full synthetic proof including analytical slides,
+calculated XLSX, DOCX pagination, weak references and overflow. Font installation is
+targeted and project-local; use its explicit Fontconfig path for rendering.
 
 No external publication, sharing, credential, network-policy or environment-setting
 changes are implied by writing configuration files. Follow the session's authority.

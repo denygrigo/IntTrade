@@ -8,7 +8,10 @@
       "accessed": "2026-10-22",
       "locator": "README deprecation notice",
       "support": "This repository is deprecated.",
-      "access_state": "opened"
+      "access_state": "opened",
+      "published_date": null,
+      "publication_note": "No exact publication date recorded; pinned repository revision or official page locator retained.",
+      "source_type": "primary_official"
     },
     {
       "id": "openai-plugins",
@@ -18,7 +21,10 @@
       "accessed": "2026-10-22",
       "locator": "README plugin layout",
       "support": "Required .codex-plugin/plugin.json; optional skills directory.",
-      "access_state": "opened"
+      "access_state": "opened",
+      "published_date": null,
+      "publication_note": "No exact publication date recorded; pinned repository revision or official page locator retained.",
+      "source_type": "primary_official"
     },
     {
       "id": "theme-license",
@@ -28,7 +34,10 @@
       "accessed": "2026-10-22",
       "locator": "LICENSE.txt header",
       "support": "Apache License, Version 2.0",
-      "access_state": "opened"
+      "access_state": "opened",
+      "published_date": null,
+      "publication_note": "No exact publication date recorded; pinned repository revision or official page locator retained.",
+      "source_type": "primary_official"
     },
     {
       "id": "canvas-license",
@@ -38,7 +47,10 @@
       "accessed": "2026-10-22",
       "locator": "LICENSE.txt header",
       "support": "Apache License, Version 2.0",
-      "access_state": "opened"
+      "access_state": "opened",
+      "published_date": null,
+      "publication_note": "No exact publication date recorded; pinned repository revision or official page locator retained.",
+      "source_type": "primary_official"
     },
     {
       "id": "mobile",
@@ -48,7 +60,10 @@
       "accessed": "2026-10-22",
       "locator": "Is Codex available on web or mobile?",
       "support": "Create and publish an environment on desktop or web before selecting it for a mobile task.",
-      "access_state": "opened"
+      "access_state": "opened",
+      "published_date": null,
+      "publication_note": "No exact publication date recorded; pinned repository revision or official page locator retained.",
+      "source_type": "primary_official"
     },
     {
       "id": "demo",
@@ -58,7 +73,10 @@
       "accessed": "2026-10-22",
       "locator": "strategy and pitch objects",
       "support": "Fictional values only: baseline 40, target 26; pilot teams 24, retained 18.",
-      "access_state": "local_dataset"
+      "access_state": "local_dataset",
+      "published_date": "2026-10-22",
+      "publication_note": "Synthetic dataset creation date",
+      "source_type": "local_synthetic_dataset"
     }
   ],
   "claims": [

@@ -19,6 +19,7 @@ def render(source,out):
         if r.returncode or not pdf.exists(): raise RuntimeError(r.stderr+r.stdout)
         target=out/pdf.name;shutil.copy2(pdf,target)
     doc=fitz.open(target)
+    for old in out.glob('slide-*.png'):old.unlink()
     thumbs=[]
     for i,page in enumerate(doc):
         f=out/f"slide-{i+1:02}.png"

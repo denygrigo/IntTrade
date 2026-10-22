@@ -18,17 +18,19 @@ def checked(command):
     return result
 
 def convert(pptx,output):
-    if not which("libreoffice") or not which("pdftoppm"):
-        raise RuntimeError("Cannot render: libreoffice and pdftoppm are both required")
+    office=which("libreoffice") or which("soffice")
+    if not office or not which("pdftoppm"):
+        raise RuntimeError("Cannot render: LibreOffice (libreoffice/soffice) and pdftoppm are both required")
     target=output/pptx.stem
     target.mkdir(parents=True,exist_ok=True)
     with TemporaryDirectory(prefix="inttrade-lo-") as temporary:
         profile=(Path(temporary)/"profile").resolve().as_uri()
-        checked(["libreoffice","-env:UserInstallation="+profile,"--headless",
+        checked([office,"-env:UserInstallation="+profile,"--headless",
                  "--convert-to","pdf","--outdir",str(target),str(pptx.resolve())])
     pdf=target/(pptx.stem+".pdf")
     if not pdf.exists():raise RuntimeError("LibreOffice did not produce "+str(pdf))
     count=len(PdfReader(str(pdf)).pages)
+    for old in target.glob('slide-*.png'):old.unlink()
     checked(["pdftoppm","-f","1","-l",str(count),"-png","-r","110",str(pdf),str(target/"slide")])
     pngs=sorted(target.glob("slide-*.png"))
     if len(pngs)!=count:raise RuntimeError("Expected %s PNG files, got %s"%(count,len(pngs)))

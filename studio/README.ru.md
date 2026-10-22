@@ -25,7 +25,18 @@ python3 studio/scripts/acceptance.py --out work/acceptance
 Полный результат настройки: [IMPLEMENTATION.ru.md](IMPLEMENTATION.ru.md).
 Существующие утилиты DOCX/XLSX остаются в корневом `scripts/`.
 
-Состояние приёмки: **PARTIAL**. Технический конвейер и тест с намеренными ошибками
+Дополнения по полному master prompt: [COMPLETION.ru.md](COMPLETION.ru.md) и
+[матрица требований](MASTER-PROMPT-MATRIX.ru.md). Полная проверка:
+
+```bash
+bash scripts/bootstrap.sh --full
+python3 studio/scripts/acceptance_full.py --out work/full-tests --base-out work/acceptance
+```
+
+Аналитический PPTX, пересчитанный Excel, Word и PDF: [full-acceptance](examples/full-acceptance/).
+
+Состояние первого прогона: **PARTIAL**. Актуальный полный прогон: **WARN**.
+Технический конвейер и тест с намеренными ошибками
 работают. Отдельный семантический/визуальный ревьюер не запускался; доступ к
 изображениям дизайнерских портфолио ограничен; новая сессия ещё не проверяла
 автоматический выбор навыков. Файлы конфигурации не публикуют окружение автоматически.

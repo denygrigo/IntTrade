@@ -5,9 +5,15 @@ Reusable, project-scoped skills for Codex Cloud: deep research, distinct slide a
 The revised PptxGenJS pipeline has been exercised in the cloud runtime on three distinct
 six-slide briefs. See the [implementation report](studio/IMPLEMENTATION.ru.md),
 [PPTX/PDF examples and QA](studio/examples/acceptance/) and
-[runtime instructions](studio/README.ru.md). Acceptance is **PARTIAL**: artifact checks
+[runtime instructions](studio/README.ru.md). Initial acceptance was **PARTIAL**: artifact checks
 and author visual review ran; separate semantic review, unrestricted designer-image
 access and new-session automatic skill activation remain unverified.
+
+The full master-prompt additions include a research deck, independently evaluated and
+recalculated Excel formulas, a three-page Word/PDF note, targeted OFL fonts, seeded weak
+references/overflow and a fixed transitive npm dependency. See the
+[current completion report](studio/COMPLETION.ru.md) and
+[new editable files and QA](studio/examples/full-acceptance/).
 
 ## How to start (iPhone or Mac)
 1. In Codex, select repository `denygrigo/IntTrade` and a branch that contains this setup.

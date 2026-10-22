@@ -1,0 +1,151 @@
+{
+  "status": "FAIL",
+  "scope": "Supported arithmetic and aggregate formulas, cached values, source rows, chart references and zero baseline; not source truth",
+  "formulas": [
+    {
+      "cell": "Analysis!B4",
+      "formula": "=COUNT(Raw!B2:B7)",
+      "computed": 6,
+      "cached": 6,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!C4",
+      "formula": "=COUNT(Raw!C2:C7)",
+      "computed": 6,
+      "cached": 6,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B5",
+      "formula": "=MEDIAN(Raw!B2:B6)",
+      "computed": 42,
+      "cached": 41.5,
+      "status": "FAIL"
+    },
+    {
+      "cell": "Analysis!C5",
+      "formula": "=MEDIAN(Raw!C2:C7)",
+      "computed": 30.5,
+      "cached": 30.5,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B6",
+      "formula": "=AVERAGE(Raw!B2:B7)",
+      "computed": 41.833333333333336,
+      "cached": 41.8333333333333,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!C6",
+      "formula": "=AVERAGE(Raw!C2:C7)",
+      "computed": 30.666666666666668,
+      "cached": 30.6666666666667,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B7",
+      "formula": "=MIN(Raw!B2:B7)",
+      "computed": 39,
+      "cached": 39,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!C7",
+      "formula": "=MIN(Raw!C2:C7)",
+      "computed": 28,
+      "cached": 28,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B8",
+      "formula": "=MAX(Raw!B2:B7)",
+      "computed": 45,
+      "cached": 45,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!C8",
+      "formula": "=MAX(Raw!C2:C7)",
+      "computed": 34,
+      "cached": 34,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B9",
+      "formula": "=SUM(Raw!B2:B7)",
+      "computed": 251,
+      "cached": 251,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!C9",
+      "formula": "=SUM(Raw!C2:C7)",
+      "computed": 184,
+      "cached": 184,
+      "status": "PASS"
+    },
+    {
+      "cell": "Analysis!B11",
+      "formula": "=B5-C5",
+      "computed": 11.5,
+      "cached": 11,
+      "status": "FAIL"
+    },
+    {
+      "cell": "Analysis!B12",
+      "formula": "=IFERROR(B11/B5,0)",
+      "computed": 0.27380952380952384,
+      "cached": 0.265060240963855,
+      "status": "FAIL"
+    },
+    {
+      "cell": "Analysis!B17",
+      "formula": "=B5",
+      "computed": 42,
+      "cached": 41.5,
+      "status": "FAIL"
+    },
+    {
+      "cell": "Analysis!B18",
+      "formula": "=C5",
+      "computed": 30.5,
+      "cached": 30.5,
+      "status": "PASS"
+    }
+  ],
+  "charts": [
+    {
+      "sheet": "Analysis",
+      "values_reference": "Analysis!$B$17:$B$18",
+      "axis_min": 0.0
+    }
+  ],
+  "findings": [
+    {
+      "code": "FORMULA_CACHE",
+      "cell": "B5",
+      "expected": 42,
+      "actual": 41.5
+    },
+    {
+      "code": "FORMULA_CACHE",
+      "cell": "B11",
+      "expected": 11.5,
+      "actual": 11
+    },
+    {
+      "code": "FORMULA_CACHE",
+      "cell": "B12",
+      "expected": 0.27380952380952384,
+      "actual": 0.265060240963855
+    },
+    {
+      "code": "FORMULA_CACHE",
+      "cell": "B17",
+      "expected": 42,
+      "actual": 41.5
+    }
+  ]
+}

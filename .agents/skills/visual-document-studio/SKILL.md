@@ -1,6 +1,6 @@
 ---
 name: visual-document-studio
-description: Build editable PowerPoint slides and readable PDF reports, render them and preserve reproducible source files.
+description: Create or edit PowerPoint PPTX, Excel XLSX, Word DOCX, PDF reports and charts with editable content, traceable data and rendered checks.
 ---
 
 Use PptxGenJS for PPTX, native text/shapes/tables and charts with embedded workbooks.
@@ -33,3 +33,14 @@ for every topic. Inspect PDF pages for clipping and Cyrillic font substitution.
 Keep PPTX/PDF and their sources, data, references and QA together. Verify exported
 files exist and are non-empty before marking a checkpoint complete. PowerPoint on the
 user's device may differ from LibreOffice; list that compatibility limit honestly.
+
+For fonts, use the reviewed `scripts/font_audit.py` and targeted
+`scripts/install_fonts.py --family ... --dest work/fonts --install`. Download only
+needed OFL families; `--static` uses optional fontTools. Use the printed Fontconfig
+path for render commands. Native PPTX font names do not imply embedded fonts or
+availability on iPhone. Do not commit font binaries or private source documents.
+
+For full proof, `acceptance_full.py` creates an analytical deck, a workbook with
+formulas and native chart, and an editable DOCX with its actual PDF pagination.
+`office_export.py --to xlsx` recalculates in a separate directory without overwriting
+the original. Extraction with MarkItDown/Docling is optional and does not preserve editing fidelity.

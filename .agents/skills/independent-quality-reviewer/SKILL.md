@@ -15,14 +15,20 @@ duplicate metric values, calculations, native editability, off-canvas elements, 
 parts, empty slides, tiny type, PDF page/text consistency and visible text bounds.
 They do not establish that a cited page entails a claim or detect every overlap.
 
+For the supported XLSX fixture, use `qa_office.py xlsx` after an actual LibreOffice
+recalculation. It independently evaluates supported formulas, compares cached results
+and source rows, and checks chart references. Unsupported functions are unverified,
+not automatically accepted. For Word use `qa_office.py docx --pdf <actual-export>`;
+inspect all actual pages and tables. Test the full pipeline with `acceptance_full.py`.
+
 Open each slide PNG at readable resolution. Check takeaway/data agreement, axes and labels,
 source placement, contrast, font substitution, cropping, overlaps, line breaks and alignment.
 View a contact sheet for coherence and layout variety. Log each slide, finding, severity,
 repair and re-rendered result. Review the report separately, including all source pages.
 
-Finding statuses: blocking, major, minor; record PASS/FAIL/PARTIAL/NOT RUN for each gate.
+Finding severities: blocking, major, minor; report PASS / WARN / FAIL / NOT TESTED per check.
 Release with zero unresolved blockers and disclose unresolved quality limits. If independent
-review was requested but unavailable, status remains PARTIAL even if automated checks pass.
+review was requested but unavailable, status remains WARN / NOT TESTED even if automated checks pass.
 
 Test E: run `qa.py evidence studio/tests/qa_bad.json` and confirm unsupported claim,
 inconsistent number and broken provenance/calculation are found with exit code 1. Then

@@ -1,0 +1,12 @@
+MISSING Inter
+MISSING Manrope
+MISSING IBM Plex Sans
+MISSING DM Sans
+MISSING Plus Jakarta Sans
+MISSING Lora
+MISSING Libre Baskerville
+MISSING Playfair Display
+FOUND Noto Sans
+FOUND Liberation Sans
+MISSING Aptos
+Font listing is not proof that a particular Office viewer preserves appearance.
