@@ -1,0 +1,61 @@
+{
+  "sources": [
+    {
+      "id": "weak",
+      "url": "https://example.org",
+      "title": "Synthetic weak-reference fixture",
+      "publisher": "Test fixture",
+      "accessed": "2026-10-22",
+      "locator": "Generic landing page, no relevant evidence",
+      "support": "No supporting passage; intentionally weak fixture",
+      "access_state": "not_opened",
+      "evidence_role": "discovery_only"
+    }
+  ],
+  "claims": [
+    {
+      "id": "unsupported",
+      "kind": "fact",
+      "text": "All companies double profit."
+    },
+    {
+      "id": "weakly-cited",
+      "kind": "fact",
+      "text": "A generic homepage proves the profit claim.",
+      "source_ids": [
+        "weak"
+      ]
+    },
+    {
+      "id": "wrong-number-0",
+      "kind": "synthetic",
+      "text": "The same group contains 12 observations.",
+      "source_ids": [
+        "weak"
+      ],
+      "disclosure": "Intentional QA fixture",
+      "metric": "n",
+      "value": 12,
+      "unit": "observations",
+      "period": "test",
+      "geography": "fictional",
+      "scope": "same group"
+    },
+    {
+      "id": "wrong-number-1",
+      "kind": "synthetic",
+      "text": "The same group contains 15 observations.",
+      "source_ids": [
+        "weak"
+      ],
+      "disclosure": "Intentional QA fixture",
+      "metric": "n",
+      "value": 15,
+      "unit": "observations",
+      "period": "test",
+      "geography": "fictional",
+      "scope": "same group"
+    }
+  ],
+  "calculations": []
+}

@@ -1,12 +1,46 @@
 ---
 name: visual-document-studio
-description: Build or edit actual PPTX, PDF, DOCX, Excel XLSX, analytical charts and reports with editable elements, source data and proper file-format QA.
+description: Create or edit PowerPoint PPTX, Excel XLSX, Word DOCX, PDF reports and charts with editable content, traceable data and rendered checks.
 ---
 
-# Production
-- Identify intended deliverable and editability; use presentation-art-director for decks.
-- Prefer native components: text, shapes and charts in PPTX; formulas and Excel charts in XLSX; actual paragraph/table styles in DOCX; vector/report exports for PDF.
-- Tool options: python-pptx or PptxGenJS, openpyxl, python-docx, reportlab, pypdf, SVG and licensed figures. Install only required dependencies. MarkItDown and Docling are extraction workflows, not fidelity-preserving editors.
-- For charts, verify units, source rows, proportion, denominators, labels, scales and uncertainties. No invented illustrative data misrepresented as research.
-- Render files when supported, audit all pages and give previews when useful. Use scripts/audit_artifacts.py for structural checks; structural PASS is not visual PASS.
-- Preserve originals if modifying existing files. Document changed sections and unresolved limitations.
+Use PptxGenJS for PPTX, native text/shapes/tables and charts with embedded workbooks.
+Preserve XLSX support with openpyxl, formulas and native Excel charts; DOCX with
+python-docx and semantic paragraph/table styles. Extraction tools do not preserve
+document fidelity. Keep the existing `scripts/create_demo.py` and
+`scripts/audit_artifacts.py` path for DOCX/XLSX smoke checks. Check chart source rows,
+formulas, units, denominators and scales. Preserve originals when editing user files.
+Avoid flattened slides. Images remain images; tell the user which components are editable.
+Never copy Anthropic's PPTX, PDF, DOCX or XLSX skill materials into this studio.
+Prefer existing runtimes. Run `python3 studio/scripts/doctor.py`; only if missing run
+`python3 studio/scripts/bootstrap.py --install-missing`. See pinned dependency manifests.
+
+Author source code and content separately. Set language, document metadata, slide size,
+font availability, meaningful notes and source locators. Keep a mapping of each claim
+to the ledger and each asset to the rights ledger. Native charts need units, time periods,
+denominators and correct axes. Do not turn figures into decorative shapes without data.
+
+`node studio/scripts/build-demos.cjs <directory>` is an acceptance example only, not a
+universal layout engine. Author new task-specific source instead of recoloring demos.
+`python3 studio/scripts/render.py <deck.pptx> --out <directory>` renders the actual file
+via LibreOffice and makes per-slide PNGs plus a contact sheet. A matching PDF made by
+another renderer does not verify the PPTX. Render in an isolated LibreOffice profile.
+
+Reports: use ReportLab with embedded installed fonts; include executive findings,
+methods, evidence, uncertainty, calculations, source links and date. `report.py` produces
+the studio acceptance report; it is a reference implementation, not a report template
+for every topic. Inspect PDF pages for clipping and Cyrillic font substitution.
+
+Keep PPTX/PDF and their sources, data, references and QA together. Verify exported
+files exist and are non-empty before marking a checkpoint complete. PowerPoint on the
+user's device may differ from LibreOffice; list that compatibility limit honestly.
+
+For fonts, use the reviewed `scripts/font_audit.py` and targeted
+`scripts/install_fonts.py --family ... --dest work/fonts --install`. Download only
+needed OFL families; `--static` uses optional fontTools. Use the printed Fontconfig
+path for render commands. Native PPTX font names do not imply embedded fonts or
+availability on iPhone. Do not commit font binaries or private source documents.
+
+For full proof, `acceptance_full.py` creates an analytical deck, a workbook with
+formulas and native chart, and an editable DOCX with its actual PDF pagination.
+`office_export.py --to xlsx` recalculates in a separate directory without overwriting
+the original. Extraction with MarkItDown/Docling is optional and does not preserve editing fidelity.

@@ -1,0 +1,6 @@
+{
+  "disclosure": "All business data are fictional acceptance-test data, not market research or observed product results.",
+  "strategy": {"stage_names":["Поиск","Синтез","Дизайн","Проверка"],"before_hours":[12,10,10,8],"after_hours":[8,7,6,5],"baseline_hours":40,"target_hours":26,"pilot_weeks":12},
+  "pitch": {"months":["М1","М2","М3","М4"],"active_teams":[6,11,17,24],"pilot_teams":24,"retained_teams":18,"ask_eur":600000,"budget_pct":[50,30,20]},
+  "brand": {"name":"ТИХО","collection":"Форма паузы","materials":["глина","бумага","свет"]}
+}

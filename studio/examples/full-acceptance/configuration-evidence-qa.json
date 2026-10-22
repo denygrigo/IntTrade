@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "scope": "Structured provenance and numeric consistency only; source entailment requires semantic review",
+  "claims": 7,
+  "sources": 6,
+  "findings": []
+}

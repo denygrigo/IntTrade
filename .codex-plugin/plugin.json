@@ -1,0 +1,6 @@
+{
+  "name": "research-design-studio",
+  "version": "1.0.0",
+  "description": "Evidence-based research, content-specific presentation art direction, editable PPTX/PDF production and explicit quality gates.",
+  "skills": "./.agents/skills/"
+}

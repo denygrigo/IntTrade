@@ -8,3 +8,5 @@ node_modules/
 artifacts/
 .cache/
 .DS_Store
+work/
+studio/.tools/

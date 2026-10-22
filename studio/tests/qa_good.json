@@ -1,0 +1,5 @@
+{
+  "sources": [{"id":"demo","url":"file:studio/examples/data.json","title":"Synthetic pilot dataset","publisher":"Studio test","accessed":"2026-10-22","locator":"pitch teams","support":"24 teams, 18 retained; fictional acceptance data","access_state":"local_dataset"}],
+  "claims": [{"id":"number-a","kind":"synthetic","text":"В условном пилоте 24 команды.","source_ids":["demo"],"disclosure":"Synthetic test","metric":"teams","value":24,"unit":"teams","period":"test","geography":"test","scope":"pilot"}],
+  "calculations": [{"id":"retention","inputs":[18,24],"operation":"ratio","result":0.75}]
+}

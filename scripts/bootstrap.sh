@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-PYTHON="${PYTHON:-python3}"
-if [ ! -d .venv ]; then "$PYTHON" -m venv .venv; fi
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python scripts/validate_skills.py
-echo "Project-local dependencies ready. Font installation and Codex Cloud publishing NOT implied."
+STUDIO_PYTHON="${PYTHON:-python3}"
+if [ -x .venv/bin/python ]; then STUDIO_PYTHON=.venv/bin/python; fi
+"$STUDIO_PYTHON" studio/scripts/bootstrap.py --install-missing "$@"
+"$STUDIO_PYTHON" scripts/validate_skills.py
+echo "Working dependencies reused or missing pins installed. Environment publication is separate."

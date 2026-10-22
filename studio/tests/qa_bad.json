@@ -1,0 +1,10 @@
+{
+  "sources": [{"id":"demo","url":"file:studio/tests/qa_good.json","title":"Test dataset","publisher":"Studio test","accessed":"2026-10-22","locator":"fixture rows","support":"Synthetic test values only","access_state":"local_dataset"}],
+  "claims": [
+    {"id":"unsupported","kind":"fact","text":"Наш продукт гарантированно удваивает прибыль любой компании."},
+    {"id":"number-a","kind":"synthetic","text":"В пилоте 24 команды.","source_ids":["demo"],"disclosure":"Synthetic test","metric":"teams","value":24,"unit":"teams","period":"test","geography":"test","scope":"pilot"},
+    {"id":"number-b","kind":"synthetic","text":"В том же пилоте 27 команд.","source_ids":["demo"],"disclosure":"Synthetic test","metric":"teams","value":27,"unit":"teams","period":"test","geography":"test","scope":"pilot"},
+    {"id":"broken","kind":"fact","text":"Внешний источник подтверждает вывод.","source_ids":["missing"]}
+  ],
+  "calculations": [{"id":"retention","inputs":[18,24],"operation":"ratio","result":0.9}]
+}

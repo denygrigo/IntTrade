@@ -1,0 +1,8 @@
+{
+  "tool": "skills.list",
+  "authority": "executor",
+  "returned_skills": [],
+  "warnings": [],
+  "observed_in_this_session": true,
+  "scope_note": "Executor-owned skill catalog; do not infer project activation from this result."
+}

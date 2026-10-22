@@ -1,0 +1,20 @@
+[
+  {
+    "id": "quiet-ceramics",
+    "path": "studio/examples/assets/quiet-ceramics.png",
+    "creator": "OpenAI image generation, directed in this task",
+    "created": "2026-10-22",
+    "kind": "generated concept visualization",
+    "documentary": false,
+    "use": "Brand deck slides 1 and 4",
+    "rights": "Generated for this task. No external photo or template incorporated. No trademark clearance asserted.",
+    "sha256": "f9f8f38db68ce57d6d8c3c659f9c35b9d11a46e9c8d750a2a7d183ef6369e7a0"
+  },
+  {
+    "id": "native-graphics",
+    "creator": "Studio",
+    "kind": "original editable PowerPoint shapes, charts and text",
+    "use": "All decks",
+    "rights": "Original source included; font files not redistributed."
+  }
+]

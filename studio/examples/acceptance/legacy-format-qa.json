@@ -1,0 +1,43 @@
+[
+  {
+    "file": "work/legacy-smoke/brand_synthetic.pptx",
+    "bytes": 30190,
+    "status": "PASS",
+    "problems": [],
+    "slide_xml_count": 2
+  },
+  {
+    "file": "work/legacy-smoke/executive_synthetic.pptx",
+    "bytes": 30466,
+    "status": "PASS",
+    "problems": [],
+    "slide_xml_count": 2
+  },
+  {
+    "file": "work/legacy-smoke/research_synthetic.pptx",
+    "bytes": 36586,
+    "status": "PASS",
+    "problems": [],
+    "slide_xml_count": 2
+  },
+  {
+    "file": "work/legacy-smoke/synthetic_example.docx",
+    "bytes": 36747,
+    "status": "PASS",
+    "problems": []
+  },
+  {
+    "file": "work/legacy-smoke/synthetic_example.pdf",
+    "bytes": 1662,
+    "status": "PASS",
+    "problems": [],
+    "pages": 1
+  },
+  {
+    "file": "work/legacy-smoke/synthetic_example.xlsx",
+    "bytes": 6674,
+    "status": "PASS",
+    "problems": [],
+    "worksheet_xml_count": 1
+  }
+]

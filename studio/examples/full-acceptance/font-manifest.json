@@ -1,0 +1,23 @@
+{
+  "commit": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+  "families": {
+    "inter": {
+      "source": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "license": "SIL-OFL-1.1",
+      "files": {
+        "inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+        "Inter[opsz,wght].ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+        "inter-Regular.ttf": "511dbab906685da5dafce24d71807ae1695d587f47d89b6d39d65da6699ce04f"
+      }
+    },
+    "lora": {
+      "source": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/lora/Lora%5Bwght%5D.ttf",
+      "license": "SIL-OFL-1.1",
+      "files": {
+        "lora-OFL.txt": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716",
+        "Lora[wght].ttf": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+        "lora-Regular.ttf": "c7379ecaeb3fb7762df92b841cd1aad308a223019a039b928807177c5bbb3cde"
+      }
+    }
+  }
+}

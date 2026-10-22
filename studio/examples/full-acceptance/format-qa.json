@@ -1,0 +1,71 @@
+[
+  {
+    "file": "studio/examples/full-acceptance/04-research/04-research.pdf",
+    "bytes": 118063,
+    "status": "PASS",
+    "problems": [],
+    "pages": 6
+  },
+  {
+    "file": "studio/examples/full-acceptance/04-research.pptx",
+    "bytes": 178440,
+    "status": "PASS",
+    "problems": [],
+    "slide_xml_count": 6
+  },
+  {
+    "file": "studio/examples/full-acceptance/completion-report.pdf",
+    "bytes": 92140,
+    "status": "PASS",
+    "problems": [],
+    "pages": 6
+  },
+  {
+    "file": "studio/examples/full-acceptance/excel-preview/research-workbook.pdf",
+    "bytes": 47975,
+    "status": "PASS",
+    "problems": [],
+    "pages": 3
+  },
+  {
+    "file": "studio/examples/full-acceptance/research-note.docx",
+    "bytes": 61114,
+    "status": "PASS",
+    "problems": []
+  },
+  {
+    "file": "studio/examples/full-acceptance/research-workbook.xlsx",
+    "bytes": 15308,
+    "status": "PASS",
+    "problems": [],
+    "worksheet_xml_count": 3
+  },
+  {
+    "file": "studio/examples/full-acceptance/seeded/error-seeded.pptx",
+    "bytes": 29281,
+    "status": "PASS",
+    "problems": [],
+    "slide_xml_count": 1
+  },
+  {
+    "file": "studio/examples/full-acceptance/seeded/rendered/error-seeded.pdf",
+    "bytes": 31501,
+    "status": "PASS",
+    "problems": [],
+    "pages": 1
+  },
+  {
+    "file": "studio/examples/full-acceptance/seeded/wrong-range.xlsx",
+    "bytes": 14961,
+    "status": "PASS",
+    "problems": [],
+    "worksheet_xml_count": 3
+  },
+  {
+    "file": "studio/examples/full-acceptance/word-preview/research-note.pdf",
+    "bytes": 93113,
+    "status": "PASS",
+    "problems": [],
+    "pages": 3
+  }
+]

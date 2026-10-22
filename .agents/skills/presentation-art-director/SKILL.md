@@ -1,15 +1,44 @@
 ---
 name: presentation-art-director
-description: Art-direct differentiated executive, investor, analytical, brand and educational decks from purpose, storytelling, real visual references, typography and imagery. Use before complete decks, not simple chart lookups.
+description: Design a professional presentation for its audience, using real references, original layouts and a coherent visual system.
 ---
 
-# Presentation art director
-1. Classify: executive/consulting, investor/pitch, research/analytical, brand/creative, or educational; identify live vs read-alone, goal, audience, page ratio and brand constraints.
-2. Read references/deck-patterns.md for appropriate storyline and design heuristics; adapt to content. Never apply eight slides or 70/30 text-image as a universal rule.
-3. For major visual deliverables, search/inspect roughly 3–6 relevant accessible real designs on Pinterest, Behance, Dribbble, designer portfolios or licensed galleries. Record visited URLs, actual observed traits, credits, dates and rights in the reference register. If inaccessible, say so; substitute user-provided licensed references or fresh original art direction.
-4. Plan a one-page design brief: narrative, grid, type pairing and fallbacks, palettes, chart syntax, images, crop rules, hierarchy, aspect ratio, page rhythm, licensing and citations.
-5. Use a distinct visual identity for each unrelated deck; maintain one coherent system within each deck. Avoid mechanically repeating giant cards, default gradients and icons.
-6. Images must explain, document or intentionally support the visual story; prefer actual subjects or evidence-backed charts to irrelevant stock photos. Verify provenance, resolution, crop, licensing and context.
-7. For copyrighted references adapt broad principles without reproducing protected photos, illustrations or entire distinctive works. For user-provided templates with reuse rights, close adaptation is permissible within those rights.
-8. Prefer editable text, vector shapes, native charts and source data, not flattened full-slide screenshots.
-9. Render all slides; inspect individual pages and a full-deck contact sheet. Detect clipping, font substitution, chart accuracy, inconsistent hierarchy and dense text; fix and rerender. If no renderer, mark visual QA not tested.
+First classify: strategic/executive, investor pitch, research/read-ahead, creative/brand,
+educational or a deliberate hybrid. Record audience, decision, delivery mode, medium,
+brand constraints, required facts and approximate scope. Adapt structure to the task.
+
+Strategic: conclusion → evidence → alternatives → recommendation → actions; concise
+summary near the start. Pitch: problem → solution/product → market → evidence of demand
+→ business model → team/ask. Research: question/method → findings → interpretation →
+limitations. Brand: concept → visual world → applications. Teaching: mental model →
+worked example → process → practice. These are narrative options, not slide templates.
+
+Find 3–6 relevant designer works on Pinterest, Behance, Dribbble or portfolios. Follow
+pins to originals where possible. Log URL, author, access state and rights. Read
+`references/visual-asset-curation.md`. Do not describe unseen images as inspected. If blocked,
+use another accessible portfolio or clearly label a provisional direction.
+
+Analyze grid, spacing, scale, typography, image treatment, chart grammar and pacing.
+Choose a main direction and compatible supporting principles. Do not trace a recognizable
+design. A user-provided licensed template can be closely adapted when rights allow.
+
+Write `art-direction.md`: rationale, tokens (palette/fonts/spacing), layout sketches,
+image strategy, chart style, evidence of reference access, and intended contrasts to
+other decks. Theme Factory and Canvas Design are optional Apache-licensed supporting
+references under `studio/vendor/`, not fixed theme menus. The user's content overrides
+their generic sparse-text and theme-confirmation conventions.
+
+Storyboard each slide with a specific communicative job, takeaway and supporting data.
+Use conclusion headlines when supported. Invent layouts for actual content: a comparison,
+timeline, annotated chart, visual statement or decision matrix should look different.
+Keep typography, margins, source treatment and chart semantics consistent within a deck.
+
+Text-density ranges are adjustable design heuristics, never scientific standards:
+brand 5–20 words; spoken pitch 10–30; executive 20–50; analytical read-ahead 40–90.
+Do not remove essential reasoning to meet a number. Move detail to notes or appendix
+when it helps. No universal percentage of image area.
+
+Build two representative slides first, inspect the actual render, then expand.
+Every slide must be rendered and visually checked, including appendix and source pages.
+Review a contact sheet for sameness, rhythm and coherence; fix causes, not decorations.
+For acceptance, create three briefs with different narrative and composition systems.

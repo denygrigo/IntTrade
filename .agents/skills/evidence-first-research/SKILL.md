@@ -1,14 +1,29 @@
 ---
 name: evidence-first-research
-description: Conduct deep research and market/product analysis with verified sources, transparent dates, evidence matrices and contradictions. Not for simple text rewrites.
+description: Research markets or complex questions, verify claims with primary sources and prepare evidence-backed analytical reports.
 ---
 
-# Research with evidence
-1. Determine question, audience, country, date range, decisions, source expectations and unknowns.
-2. Test actual browsing capability. Never call memory an accessed source. Clearly label unavailable live verification.
-3. Search broadly; prioritize original documents, regulators, company disclosures, primary datasets, research methods and independent reporting. Syndicated copies do not count as independent confirmations.
-4. Capture claim, URL, date published, date accessed, relevant paragraph/table locator, source type, independent status, caveat and confidence using research/evidence-register-template.csv.
-5. Check pivotal numbers, units, denominators, time windows, samples and uncertainty. Date the event separately from article publication.
-6. Investigate contradictions rather than silently picking one. Explicitly separate verified facts, source-reported claims, estimates, calculations and interpretations.
-7. Present useful conclusions proportional to evidence, not a generic source dump. Do not limit the research to an arbitrary number of sources.
-8. For deliverables invoke independent-quality-reviewer and attach an evidence trail.
+1. Define the decision, geography, period, audience and cutoff date. Use the user's timezone.
+2. Write a research plan with subquestions and an evidence table. Separate facts,
+   calculations, assumptions, forecasts and recommendations.
+3. Prefer primary datasets, regulator filings, original papers and official reports.
+   Read the source itself; a search snippet alone is discovery. Corroborate material
+   disputed claims with an independent source. Keep publication and observation dates.
+   Syndicated repeats do not count as independent confirmation. Inspect methods,
+   sample sizes, selection rules and contradictory evidence. Search coverage follows
+   the question; do not cap a deep investigation at an arbitrary source count.
+4. In `work/<task>/evidence.json`, record a source ID, URL, publisher, title, accessed
+   date, publication date (or an explicit unknown-date note), source type,
+   independence/ownership, exact locator, a short support excerpt and limitations. Claims link to source
+   IDs and record metric, value, unit, period, geography and scope. Do not let different
+   currencies, years or denominators create false comparisons.
+5. Record calculations with operands and formula; recompute totals, shares and growth.
+   If the source is unavailable, mark the claim unverified, omit it or qualify it.
+6. Synthesize around the decision. Keep methods, uncertainty, conflicting evidence and
+   missing coverage visible. No unsupported recommendation masquerading as a fact.
+   Keep source-reported claims, assumptions and unknowns distinct from confirmed facts.
+7. Pass the ledger and frozen report to QA. `python3 studio/scripts/qa.py evidence
+   <ledger.json>` checks structured provenance and numeric consistency, not entailment.
+
+For a new job, `studio.py new` creates a ledger scaffold. Research must fill it with
+opened evidence. User example prompts are not assignments to perform that market study.

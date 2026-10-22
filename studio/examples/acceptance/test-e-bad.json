@@ -1,0 +1,38 @@
+{
+  "status": "FAIL",
+  "scope": "Structured provenance and numeric consistency only; source entailment requires semantic review",
+  "claims": 4,
+  "sources": 1,
+  "findings": [
+    {
+      "severity": "blocking",
+      "code": "UNSUPPORTED_CLAIM",
+      "message": "No supporting source",
+      "claim": "unsupported"
+    },
+    {
+      "severity": "blocking",
+      "code": "BROKEN_SOURCE",
+      "message": "Unknown source missing",
+      "claim": "broken"
+    },
+    {
+      "severity": "blocking",
+      "code": "INCONSISTENT_NUMBER",
+      "message": "Same metric/scope has conflicting values: [24, 27]",
+      "metric": [
+        "teams",
+        "teams",
+        "test",
+        "test",
+        "pilot"
+      ]
+    },
+    {
+      "severity": "blocking",
+      "code": "CALCULATION",
+      "message": "Expected 0.75; recorded 0.9",
+      "calculation": "retention"
+    }
+  ]
+}

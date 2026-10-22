@@ -1,0 +1,4 @@
+REUSED inter
+REUSED lora
+Command-scoped FONTCONFIG_FILE=/workspace/IntTrade/work/fonts/fontconfig.xml
+Current runtime files only; environment publication is separate.

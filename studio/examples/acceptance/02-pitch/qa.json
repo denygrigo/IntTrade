@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "scope": "Artifact structure and rendered text; visual/semantic review separate",
+  "slides": [
+    {
+      "slide": 1,
+      "text_runs": 8,
+      "charts": 0,
+      "text": "TRACE У каждого вывода есть след. Рабочее пространство доказательств для исследовательских команд ВЫМЫШЛЕННЫЙ ПРОДУКТ / SEED CONCEPT TRACE / FICTIONAL PITCH · ВСЕ ПОКАЗАТЕЛИ УСЛОВНЫЕ 01",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    },
+    {
+      "slide": 2,
+      "text_runs": 11,
+      "charts": 0,
+      "text": "ПРОБЛЕМА Ссылка потерялась. Уверенность — тоже. 01 Сохранили URL 02 Перенесли цифру 03 Забыли контекст ГИПОТЕЗА ПРОБЛЕМЫ · ТРЕБУЕТ ИНТЕРВЬЮ С ПОЛЬЗОВАТЕЛЯМИ 02",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    },
+    {
+      "slide": 3,
+      "text_runs": 16,
+      "charts": 0,
+      "text": "ПРОДУКТ От источника до решения. 01 Источник Фрагмент, дата, страница 02 Утверждение Число, единица, период 03 Результат Отчёт, слайд, проверка Концепция интерфейса. Не готовый программный продукт. TRACE / FICTIONAL PITCH · ВСЕ ПОКАЗАТЕЛИ УСЛОВНЫЕ 03",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    },
+    {
+      "slide": 4,
+      "text_runs": 7,
+      "charts": 1,
+      "text": "СЦЕНАРИЙ ПИЛОТА 24 команды. 18 продолжают. 75% условное удержание TRACE / FICTIONAL PITCH · ВСЕ ПОКАЗАТЕЛИ УСЛОВНЫЕ 04",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    },
+    {
+      "slide": 5,
+      "text_runs": 11,
+      "charts": 0,
+      "text": "ПРЕДЛАГАЕМЫЙ ЗАПРОС €600k Чтобы проверить платящий спрос Продукт 50% Пилоты 30% Инфраструктура 20% УСЛОВНЫЙ БЮДЖЕТ · НЕ ПРЕДЛОЖЕНИЕ ОБ ИНВЕСТИРОВАНИИ 05",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    },
+    {
+      "slide": 6,
+      "text_runs": 8,
+      "charts": 0,
+      "text": "СЛЕДУЮЩИЙ ШАГ Сначала — доказать спрос. Интервью → платный пилот → решение о продукте Пока не проверены: размер рынка, готовность платить, себестоимость обслуживания и экономика привлечения. TRACE / FICTIONAL PITCH · ВСЕ ПОКАЗАТЕЛИ УСЛОВНЫЕ 06",
+      "fonts": [
+        "DejaVu Sans"
+      ],
+      "rendered_text_coverage": 1.0
+    }
+  ],
+  "embedded_workbooks": 1,
+  "findings": []
+}

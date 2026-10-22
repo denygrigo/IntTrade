@@ -1,0 +1,7 @@
+{
+  "name": "research-design-studio-tools",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {"pptxgenjs": "4.0.1"},
+  "overrides": {"image-size": "2.0.4"}
+}

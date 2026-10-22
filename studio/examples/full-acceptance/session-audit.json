@@ -1,0 +1,123 @@
+{
+  "observed_at_utc": "2026-10-22T00:59:25.169328+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "Pillow": "12.3.0",
+      "PyMuPDF": "1.26.6",
+      "reportlab": "4.4.9",
+      "python-pptx": "1.0.2",
+      "openpyxl": "3.1.5",
+      "python-docx": "1.2.0",
+      "pypdf": "6.10.0",
+      "fonttools": "4.61.1",
+      "matplotlib": "3.10.8"
+    },
+    "tools": {
+      "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "npm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm",
+      "soffice": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+      "git": "/usr/local/bin/git",
+      "fc-list": "/usr/bin/fc-list"
+    },
+    "pptxgenjs": "4.0.1",
+    "image_size": "2.0.4",
+    "required_image_size": "2.0.4",
+    "dependency_policy_satisfied": true,
+    "ready": true
+  },
+  "commands": {
+    "node": {
+      "status": "PASS",
+      "version": "v24.19.0"
+    },
+    "npm": {
+      "status": "PASS",
+      "version": "11.9.0"
+    },
+    "pip": {
+      "status": "PASS",
+      "version": "pip 26.2.1 from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pip (python 3.12)"
+    },
+    "libreoffice": {
+      "status": "PASS",
+      "version": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5"
+    },
+    "poppler": {
+      "status": "PASS",
+      "version": "pdftoppm version 26.05.0"
+    },
+    "codex_cli": {
+      "status": "PASS",
+      "version": "codex-cli 0.163.0"
+    },
+    "git": {
+      "status": "PASS",
+      "version": "git version 2.52.0"
+    }
+  },
+  "fonts": {
+    "Inter": "FOUND",
+    "Manrope": "MISSING",
+    "IBM Plex Sans": "MISSING",
+    "DM Sans": "MISSING",
+    "Plus Jakarta Sans": "MISSING",
+    "Lora": "FOUND",
+    "Libre Baskerville": "MISSING",
+    "Playfair Display": "MISSING",
+    "Noto Sans": "FOUND",
+    "Liberation Sans": "FOUND",
+    "DejaVu Sans": "FOUND",
+    "Aptos": "MISSING"
+  },
+  "extractors": {
+    "markitdown": false,
+    "docling": false,
+    "fitz": true,
+    "pptx": true,
+    "openpyxl": true,
+    "docx": true,
+    "matplotlib": true,
+    "fontTools": true
+  },
+  "project_skill_files": [
+    {
+      "name": "evidence-first-research",
+      "sha256": "37628c7c7da14cf02bd576ed8b8c84fe89f9cf3aca6f42f222626a6dcbc2f9bd"
+    },
+    {
+      "name": "humanizer",
+      "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad"
+    },
+    {
+      "name": "independent-quality-reviewer",
+      "sha256": "e7fd9c67c9795c5ecf7d41dbb0e7cf01913bcb2991863ea9fd0874cc0528ba92"
+    },
+    {
+      "name": "presentation-art-director",
+      "sha256": "364e9010652babc984f651bd1b46cc55e341270f80d5fb4f83bc40a051838ffb"
+    },
+    {
+      "name": "professional-writing-editor",
+      "sha256": "7c58c4fadfcb1a3d34be08b57d8b069faac07ee099b04493e86bcfdcba26285e"
+    },
+    {
+      "name": "visual-document-studio",
+      "sha256": "0491d86065905e8f30f1704fb118eb4b3fd073e58dab193fa15b8d18870824d9"
+    },
+    {
+      "name": "workflow-reliability",
+      "sha256": "cc967c8228f96fcbd59f35a95aa945ffe9374716256941ed8e0cf763487e226a"
+    }
+  ],
+  "fonts_scope": "Command-scoped Fontconfig plus existing system fonts; not a published environment setting",
+  "catalog_observation": {
+    "tool": "skills.list",
+    "authority": "executor",
+    "returned_skills": [],
+    "warnings": [],
+    "observed_in_this_session": true,
+    "scope_note": "Executor-owned skill catalog; do not infer project activation from this result."
+  },
+  "recognition_limit": "Seven files and successful workflow execution do not establish automatic skill activation by this running session or a future task."
+}

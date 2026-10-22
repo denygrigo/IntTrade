@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-22",
+  "repositories": [
+    {
+      "repo": "openai/plugins",
+      "default_branch": "main",
+      "pushed_at": "2026-10-08T05:21:35Z",
+      "archived": false,
+      "url": "https://github.com/openai/plugins",
+      "head_sha": "0722921d5542fc593105c27bd52630babd8b8c2a",
+      "inspected_files": [],
+      "decision": "reference",
+      "review": "Current official examples; existing root plugin manifest follows this packaging. A plugin is not automatically installed by being copied. Per-component licenses only.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "anthropics/skills",
+      "default_branch": "main",
+      "pushed_at": "2026-10-09T18:45:52Z",
+      "archived": false,
+      "url": "https://github.com/anthropics/skills",
+      "head_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "inspected_files": [],
+      "decision": "selected references only",
+      "review": "Only Apache-2.0 Theme Factory/Canvas texts retained with licenses; no proprietary document materials copied.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "blader/humanizer",
+      "default_branch": "main",
+      "pushed_at": "2026-10-16T19:12:03Z",
+      "archived": false,
+      "license": "MIT",
+      "url": "https://github.com/blader/humanizer",
+      "head_sha": "8c307f367c91bd974002f10f2be2965d642c13df",
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/blader/humanizer/8c307f367c91bd974002f10f2be2965d642c13df/LICENSE",
+          "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+          "bytes": 1066,
+          "license_header": [
+            "MIT License",
+            "",
+            "Copyright (c) 2025 Siqi Chen"
+          ]
+        },
+        {
+          "path": "SKILL.md",
+          "url": "https://raw.githubusercontent.com/blader/humanizer/8c307f367c91bd974002f10f2be2965d642c13df/SKILL.md",
+          "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+          "bytes": 32348,
+          "matches_vendored_skill": true
+        }
+      ],
+      "decision": "retain existing",
+      "review": "Exact current upstream SKILL.md matches existing MIT vendored blob 19fc634208e8cc6ae55d4ff287152583216fd244. No reinstall.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "gitbrent/PptxGenJS",
+      "default_branch": "master",
+      "pushed_at": "2025-11-28T20:17:14Z",
+      "archived": false,
+      "license": "MIT",
+      "url": "https://github.com/gitbrent/PptxGenJS",
+      "head_sha": "3c9ec1b687c174952166f6a34b5e87ebf69fa469",
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/gitbrent/PptxGenJS/3c9ec1b687c174952166f6a34b5e87ebf69fa469/LICENSE",
+          "sha256": "7a2bfe96150786ed1908b8e63f98ebab88875c1e79e28faff6649e0f11f77e52",
+          "bytes": 1081,
+          "license_header": [
+            "The MIT License (MIT)",
+            "",
+            "Copyright (c) 2015-2022 Brent Ely"
+          ]
+        },
+        {
+          "path": "package.json",
+          "url": "https://raw.githubusercontent.com/gitbrent/PptxGenJS/3c9ec1b687c174952166f6a34b5e87ebf69fa469/package.json",
+          "sha256": "a4fc694898ef6f7da4c5840b799b593a0a74e9e05b7490b2ac5ee144762db477",
+          "bytes": 2265,
+          "version": "4.0.1",
+          "license": "MIT",
+          "engines": null,
+          "dependencies": {
+            "@types/node": "^22.8.1",
+            "https": "^1.0.0",
+            "image-size": "^1.2.1",
+            "jszip": "^3.10.1"
+          }
+        }
+      ],
+      "decision": "use tested local tree",
+      "review": "MIT 4.0.1 retained. npm audit found vulnerable image-size 1.2.1; local override pins 2.0.4 and all deck builds passed. Fixed audit has zero known npm advisories; not a full security certification.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "default_branch": "main",
+      "pushed_at": "2026-10-21T19:39:33Z",
+      "archived": false,
+      "license": "MIT",
+      "url": "https://github.com/microsoft/markitdown",
+      "head_sha": "21d9c1d01ecc12538dab19811fd247ef2f96ef60",
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/microsoft/markitdown/21d9c1d01ecc12538dab19811fd247ef2f96ef60/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "license_header": [
+            "    MIT License",
+            "",
+            "    Copyright (c) Microsoft Corporation."
+          ]
+        },
+        {
+          "path": "packages/markitdown/pyproject.toml",
+          "url": "https://raw.githubusercontent.com/microsoft/markitdown/21d9c1d01ecc12538dab19811fd247ef2f96ef60/packages/markitdown/pyproject.toml",
+          "sha256": "0af3848918b2425702f8f727342f13f0cc2bda85e081df1b5da2f703525cdd06",
+          "bytes": 2968,
+          "requires_python": ">=3.10,<3.15",
+          "dependencies": [
+            "beautifulsoup4",
+            "requests",
+            "certifi>=2026.10.19",
+            "markdownify",
+            "magika>=0.6.1,<2",
+            "charset-normalizer",
+            "defusedxml"
+          ],
+          "extras": [
+            "all",
+            "audio-transcription",
+            "az-content-understanding",
+            "az-doc-intel",
+            "docx",
+            "outlook",
+            "pdf",
+            "pptx",
+            "xls",
+            "xlsx",
+            "youtube-transcription"
+          ]
+        }
+      ],
+      "decision": "defer optional extraction",
+      "review": "MIT, Python >=3.10,<3.15. Base dependencies include requests, Magika and defusedxml; format extras add parsers. Current born-digital PDF/DOCX extraction already works; no missing capability in these tests. No install or runtime compatibility claim.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "docling-project/docling",
+      "default_branch": "main",
+      "pushed_at": "2026-10-21T14:33:19Z",
+      "archived": false,
+      "license": "MIT",
+      "url": "https://github.com/docling-project/docling",
+      "head_sha": "29caea8381e885872905dc9438f10014368a2a25",
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/docling-project/docling/29caea8381e885872905dc9438f10014368a2a25/LICENSE",
+          "sha256": "edb765d1e3e60d0c7a7d5fba5f2bb2c3c29f7465cecb5c22cf1185c884954e4c",
+          "bytes": 1072,
+          "license_header": [
+            "MIT License",
+            "",
+            "Copyright The Docling Contributors"
+          ]
+        },
+        {
+          "path": "pyproject.toml",
+          "url": "https://raw.githubusercontent.com/docling-project/docling/29caea8381e885872905dc9438f10014368a2a25/pyproject.toml",
+          "sha256": "f9f8b95074ef962307bc816e8f970e0a1d6657ebd82259a46087039315c742b0",
+          "bytes": 16204,
+          "requires_python": ">=3.10,<4.0",
+          "dependencies": [
+            "pydantic>=2.0.0,<3.0.0",
+            "docling-core>=2.102.0,<3.0.0",
+            "pydantic-settings>=2.3.0,<3.0.0",
+            "filetype>=1.2.0,<2.0.0",
+            "requests>=2.32.2,<3.0.0",
+            "certifi>=2024.7.4",
+            "pluggy>=1.0.0,<2.0.0",
+            "tqdm>=4.65.0,<5.0.0",
+            "langcodes>=3.5.0,<4.0.0"
+          ],
+          "extras": [
+            "all",
+            "cli",
+            "convert-core",
+            "extract-core",
+            "feat-chunking",
+            "feat-ocr-easyocr",
+            "feat-ocr-mac",
+            "feat-ocr-nemotron",
+            "feat-ocr-rapidocr",
+            "feat-ocr-rapidocr-onnx",
+            "feat-ocr-tesserocr",
+            "format-audio",
+            "format-docx",
+            "format-email",
+            "format-html",
+            "format-html-render",
+            "format-iwork",
+            "format-latex",
+            "format-markdown",
+            "format-office",
+            "format-opendocument",
+            "format-pdf",
+            "format-pdf-docling",
+            "format-pdf-pypdfium2",
+            "format-pptx",
+            "format-video",
+            "format-web",
+            "format-xlsx",
+            "format-xml-jats",
+            "format-xml-uspto",
+            "format-xml-xbrl",
+            "models-local",
+            "models-onnxruntime",
+            "models-remote",
+            "models-vlm-inline",
+            "service-client",
+            "standard"
+          ]
+        }
+      ],
+      "decision": "defer optional extraction",
+      "review": "MIT, Python >=3.10,<4.0. Modular format/OCR/model extras require a separate task-specific dependency and model review. No install, model download or runtime compatibility claim.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    },
+    {
+      "repo": "google/fonts",
+      "default_branch": "main",
+      "pushed_at": "2026-10-21T19:06:27Z",
+      "archived": false,
+      "url": "https://github.com/google/fonts",
+      "head_sha": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+      "inspected_files": [],
+      "decision": "two targeted families",
+      "review": "Pinned OFL files Inter and Lora verified and installed in ignored work/fonts, static local instances via existing fontTools. No font binaries committed. Other listed families remain optional.",
+      "security_scope": "Dependency/license/integration review; no unreviewed upstream installer executed. Optional tools not security-certified."
+    }
+  ]
+}
