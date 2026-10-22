@@ -7,7 +7,9 @@
 - Репозиторий: denygrigo/IntTrade; ветка: codex/research-design-studio-20261022.
 - Рабочий каталог: корень репозитория.
 - Setup: `bash scripts/bootstrap.sh --full`.
-- Node 24, Python 3.12; LibreOffice и DejaVu/Noto с кириллицей в образе.
+- Node 24, Python 3.12; LibreOffice Impress, Calc и Writer, Poppler и DejaVu/Noto с кириллицей в образе.
+- Для Ubuntu минимальные офисные пакеты: libreoffice-impress, libreoffice-calc,
+  libreoffice-writer, poppler-utils. Одного Impress недостаточно для XLSX/DOCX.
 - Секреты: для локального конвейера не нужны. Не добавлять ключи «на всякий случай».
 - Пакетные домены: оставить действующий preset package_managers.
 - Если нужен прямой сбор референсов, рассмотреть только нужные домены из списка ниже.

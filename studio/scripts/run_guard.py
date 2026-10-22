@@ -81,6 +81,8 @@ def main():
         with log.open("rb") as f: f.seek(-2_000_000,2); tail=f.read()
         log.write_bytes(tail)
     print(f"{state['status'].upper()}: exit={code}; log={log}")
+    if code:
+        print(log.read_text(errors='replace')[-2500:])
     return code if code >= 0 else 128 - code
 
 if __name__ == "__main__": sys.exit(main())

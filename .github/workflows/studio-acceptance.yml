@@ -17,13 +17,14 @@ jobs:
         with: {python-version: '3.12'}
       - uses: actions/setup-node@v4
         with: {node-version: '24', cache: npm, cache-dependency-path: studio/package-lock.json}
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-impress poppler-utils fonts-dejavu-core
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-impress libreoffice-calc libreoffice-writer poppler-utils fonts-dejavu-core
       - run: python -m pip install -r requirements.txt -r studio/requirements-full.txt
       - run: npm ci --prefix studio --ignore-scripts --no-audit --no-fund
       - run: npm audit --prefix studio --omit=dev --audit-level=high
       - run: python scripts/validate_skills.py
       - run: python studio/scripts/acceptance_full.py --out work/full-tests --base-out work/acceptance
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: studio-pptx-pdf-and-qa
           path: |
