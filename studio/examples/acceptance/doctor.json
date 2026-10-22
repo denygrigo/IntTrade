@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "Pillow": "12.3.0",
+    "PyMuPDF": "1.26.6",
+    "reportlab": "4.4.9",
+    "python-pptx": "1.0.2",
+    "openpyxl": "3.1.5",
+    "python-docx": "1.2.0",
+    "pypdf": "6.10.0"
+  },
+  "tools": {
+    "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "npm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm",
+    "soffice": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+    "git": "/usr/local/bin/git",
+    "fc-list": "/usr/bin/fc-list"
+  },
+  "pptxgenjs": "4.0.1",
+  "ready": true
+}

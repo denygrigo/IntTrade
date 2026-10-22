@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-22",
+  "independent_review_status": "NOT RUN",
+  "overall_acceptance": "PARTIAL",
+  "reviews": [
+    {
+      "deck": "01-strategy",
+      "pptx_sha256": "ad619497421a93ffac3249a5a912d523f24a05a90620108fe61b1155f8c188fc",
+      "pdf_sha256": "cc714a63a3c7fc7eb9b8921a7c49e80b1f39e6d1ab448d2fe1827176c97cd3bd",
+      "reviewer": "Author assistant in the same task; not a separate model or person",
+      "independent": false,
+      "slides": [
+        {
+          "slide": 1,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Clear decision cover; −35% explicitly marked as a modeled target."
+        },
+        {
+          "slide": 2,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Answer-first summary and zero-blocker continuation criterion are readable."
+        },
+        {
+          "slide": 3,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Grouped native chart values/units/labels match 40-to-26 model and −14 h."
+        },
+        {
+          "slide": 4,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Comparison matrix aligns columns and marks assessment qualitative."
+        },
+        {
+          "slide": 5,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Three phases use a consistent timeline and named owner roles."
+        },
+        {
+          "slide": 6,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Limitations, arithmetic and local source locator are visible."
+        }
+      ],
+      "unresolved_visual_blockers_observed": 0
+    },
+    {
+      "deck": "02-pitch",
+      "pptx_sha256": "31a0855485ab8efefd23b3f33640b45a9bd9adeca24c5843070a2763ce87bbd6",
+      "pdf_sha256": "f37828687b4ab789666a7198b2a68456303c7aacf383461bfd716aa4d1d8b373",
+      "reviewer": "Author assistant in the same task; not a separate model or person",
+      "independent": false,
+      "slides": [
+        {
+          "slide": 1,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Large thesis and fictional-product disclosure visible."
+        },
+        {
+          "slide": 2,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Three-part problem statement is explicitly labelled a hypothesis."
+        },
+        {
+          "slide": 3,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Product chain is readable and labelled a concept rather than shipped software."
+        },
+        {
+          "slide": 4,
+          "status": "AUTHOR_REVIEWED",
+          "note": "24/18/75% and synthetic line series agree with data; axis begins at zero."
+        },
+        {
+          "slide": 5,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Budget labels were aligned to two lines and re-inspected after rerender."
+        },
+        {
+          "slide": 6,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Next validation step and missing market/business evidence are explicit."
+        }
+      ],
+      "unresolved_visual_blockers_observed": 0
+    },
+    {
+      "deck": "03-brand",
+      "pptx_sha256": "18b2de3dc192d92165a6bef5c232eebb7bfede46803e1dae8dbbc0b23e942ecf",
+      "pdf_sha256": "cfcb02f32784ea9aa9366023f811de469f82b0f6af113c722d36f47cd1a7608d",
+      "reviewer": "Author assistant in the same task; not a separate model or person",
+      "independent": false,
+      "slides": [
+        {
+          "slide": 1,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Generated still life supports serif title; native text has clear contrast."
+        },
+        {
+          "slide": 2,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Type-only spread gives a deliberate visual pause with legible hierarchy."
+        },
+        {
+          "slide": 3,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Three material abstractions share margins and labels."
+        },
+        {
+          "slide": 4,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Photo-like asset is labelled generated concept; right column remains clear."
+        },
+        {
+          "slide": 5,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Paper application uses native type and shapes with consistent palette."
+        },
+        {
+          "slide": 6,
+          "status": "AUTHOR_REVIEWED",
+          "note": "Closing scale, spacing and generated-image disclosure are readable."
+        }
+      ],
+      "unresolved_visual_blockers_observed": 0
+    }
+  ]
+}

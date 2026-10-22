@@ -1,0 +1,10 @@
+test_artifact_defects (test_acceptance.Acceptance.test_artifact_defects) ... ok
+test_bad_qa_fixture (test_acceptance.Acceptance.test_bad_qa_fixture) ... ok
+test_good_qa_fixture (test_acceptance.Acceptance.test_good_qa_fixture) ... ok
+test_recovery_and_hashes (test_acceptance.Acceptance.test_recovery_and_hashes) ... ok
+test_timeout_and_missing_output (test_acceptance.Acceptance.test_timeout_and_missing_output) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.291s
+
+OK

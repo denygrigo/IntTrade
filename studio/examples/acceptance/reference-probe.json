@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.behance.net/gallery/250128397/Corporate-Pitch-Deck-Redesign",
+    "checked_at": "2026-10-22T00:09:33.123731+00:00",
+    "route": "executor HTTP proxy",
+    "visually_inspected": false,
+    "status": "blocked_or_unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://www.pinterest.com",
+    "checked_at": "2026-10-22T00:09:33.159995+00:00",
+    "route": "executor HTTP proxy",
+    "visually_inspected": false,
+    "status": "blocked_or_unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://cdn.dribbble.com/userupload/44417180/file/0486ad336a30fb1b10c9483c909b663c.jpg",
+    "checked_at": "2026-10-22T00:09:33.168703+00:00",
+    "route": "executor HTTP proxy",
+    "visually_inspected": false,
+    "status": "blocked_or_unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/slidevjs/themes/main/screenshots/theme-seriph/01.png",
+    "checked_at": "2026-10-22T00:09:33.175904+00:00",
+    "route": "executor HTTP proxy",
+    "visually_inspected": false,
+    "http": 200,
+    "mime": "image/png",
+    "bytes": 780542,
+    "sha256": "fcdde218303f733fed0ef5049d738fc27666dca9aa4ee1e41a5eab1033bbbbcd",
+    "final_url": "https://raw.githubusercontent.com/slidevjs/themes/main/screenshots/theme-seriph/01.png",
+    "status": "image_accessed"
+  }
+]

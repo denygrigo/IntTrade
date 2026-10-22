@@ -1,0 +1,172 @@
+{
+  "sources": [
+    {
+      "id": "openai-skills",
+      "url": "https://github.com/openai/skills",
+      "title": "Deprecated skills catalog",
+      "publisher": "OpenAI",
+      "accessed": "2026-10-22",
+      "locator": "README deprecation notice",
+      "support": "This repository is deprecated.",
+      "access_state": "opened"
+    },
+    {
+      "id": "openai-plugins",
+      "url": "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/README.md",
+      "title": "Current plugin examples",
+      "publisher": "OpenAI",
+      "accessed": "2026-10-22",
+      "locator": "README plugin layout",
+      "support": "Required .codex-plugin/plugin.json; optional skills directory.",
+      "access_state": "opened"
+    },
+    {
+      "id": "theme-license",
+      "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/LICENSE.txt",
+      "title": "Theme Factory license",
+      "publisher": "Anthropic",
+      "accessed": "2026-10-22",
+      "locator": "LICENSE.txt header",
+      "support": "Apache License, Version 2.0",
+      "access_state": "opened"
+    },
+    {
+      "id": "canvas-license",
+      "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/canvas-design/LICENSE.txt",
+      "title": "Canvas Design license",
+      "publisher": "Anthropic",
+      "accessed": "2026-10-22",
+      "locator": "LICENSE.txt header",
+      "support": "Apache License, Version 2.0",
+      "access_state": "opened"
+    },
+    {
+      "id": "mobile",
+      "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
+      "title": "ChatGPT Work and Codex",
+      "publisher": "OpenAI",
+      "accessed": "2026-10-22",
+      "locator": "Is Codex available on web or mobile?",
+      "support": "Create and publish an environment on desktop or web before selecting it for a mobile task.",
+      "access_state": "opened"
+    },
+    {
+      "id": "demo",
+      "url": "file:studio/examples/data.json",
+      "title": "Synthetic acceptance dataset",
+      "publisher": "Studio",
+      "accessed": "2026-10-22",
+      "locator": "strategy and pitch objects",
+      "support": "Fictional values only: baseline 40, target 26; pilot teams 24, retained 18.",
+      "access_state": "local_dataset"
+    }
+  ],
+  "claims": [
+    {
+      "id": "current-source",
+      "kind": "fact",
+      "text": "The former skills repository is deprecated and the current examples are in openai/plugins.",
+      "source_ids": [
+        "openai-skills",
+        "openai-plugins"
+      ]
+    },
+    {
+      "id": "licenses",
+      "kind": "fact",
+      "text": "The selected Theme Factory and Canvas Design source texts carry Apache 2.0 licenses.",
+      "source_ids": [
+        "theme-license",
+        "canvas-license"
+      ]
+    },
+    {
+      "id": "mobile-publication",
+      "kind": "fact",
+      "text": "The official mobile workflow requires a published cloud environment first.",
+      "source_ids": [
+        "mobile"
+      ]
+    },
+    {
+      "id": "baseline",
+      "kind": "synthetic",
+      "text": "Fictional acceptance value: strategy baseline = 40.",
+      "source_ids": [
+        "demo"
+      ],
+      "disclosure": "Visible synthetic/demo labels on slides",
+      "metric": "hours",
+      "value": 40,
+      "unit": "hours",
+      "period": "acceptance scenario",
+      "geography": "fictional",
+      "scope": "strategy baseline"
+    },
+    {
+      "id": "target",
+      "kind": "synthetic",
+      "text": "Fictional acceptance value: strategy target = 26.",
+      "source_ids": [
+        "demo"
+      ],
+      "disclosure": "Visible synthetic/demo labels on slides",
+      "metric": "hours",
+      "value": 26,
+      "unit": "hours",
+      "period": "acceptance scenario",
+      "geography": "fictional",
+      "scope": "strategy target"
+    },
+    {
+      "id": "teams",
+      "kind": "synthetic",
+      "text": "Fictional acceptance value: pitch pilot = 24.",
+      "source_ids": [
+        "demo"
+      ],
+      "disclosure": "Visible synthetic/demo labels on slides",
+      "metric": "teams",
+      "value": 24,
+      "unit": "teams",
+      "period": "acceptance scenario",
+      "geography": "fictional",
+      "scope": "pitch pilot"
+    },
+    {
+      "id": "retained",
+      "kind": "synthetic",
+      "text": "Fictional acceptance value: pitch retained = 18.",
+      "source_ids": [
+        "demo"
+      ],
+      "disclosure": "Visible synthetic/demo labels on slides",
+      "metric": "teams",
+      "value": 18,
+      "unit": "teams",
+      "period": "acceptance scenario",
+      "geography": "fictional",
+      "scope": "pitch retained"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "reduction",
+      "operation": "reduction_pct",
+      "inputs": [
+        40,
+        26
+      ],
+      "result": 35
+    },
+    {
+      "id": "retention",
+      "operation": "ratio",
+      "inputs": [
+        18,
+        24
+      ],
+      "result": 0.75
+    }
+  ]
+}

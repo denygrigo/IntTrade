@@ -1,0 +1,80 @@
+[
+  {
+    "id": "slidev-seriph",
+    "url": "https://github.com/slidevjs/themes/tree/main/packages/theme-seriph",
+    "image_url": "https://raw.githubusercontent.com/slidevjs/themes/main/screenshots/theme-seriph/01.png",
+    "author": "Anthony Fu",
+    "status": "visually_inspected",
+    "sha256": "fcdde218303f733fed0ef5049d738fc27666dca9aa4ee1e41a5eab1033bbbbcd",
+    "analysis": "Dark photographic field; centered serif title; high hierarchy contrast. Used only as contrast between photography and typography, without copying the title composition.",
+    "rights": "Repo says code MIT, images/assets CC BY-NC-SA 4.0. Viewed privately, not redistributed or embedded.",
+    "role": "fallback technical design reference, not a Pinterest/Behance designer portfolio"
+  },
+  {
+    "id": "slidev-bricks",
+    "url": "https://github.com/slidevjs/themes/tree/main/packages/theme-bricks",
+    "image_url": "https://raw.githubusercontent.com/slidevjs/themes/main/screenshots/theme-bricks/01.png",
+    "author": "iiiiiiinès",
+    "status": "visually_inspected",
+    "sha256": "ca24eb17393e9b35392ed73b6aaf3eaf197145019f0cc707bf69f8c3f287f09b",
+    "analysis": "Warm pale field; large playful black display type; scattered soft geometry. Useful example of distinct graphic language; rejected its playful mood for executive slides.",
+    "rights": "Repo says code MIT, images/assets CC BY-NC-SA 4.0. Viewed privately, not redistributed or embedded.",
+    "role": "fallback technical design reference, not a Pinterest/Behance designer portfolio"
+  },
+  {
+    "id": "slidev-apple-basic",
+    "url": "https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic",
+    "image_url": "https://raw.githubusercontent.com/slidevjs/themes/main/screenshots/theme-apple-basic/01.png",
+    "author": "Jeremy Meissner",
+    "status": "visually_inspected",
+    "sha256": "b3bb6237f3de932cb1b7f10a1c9b6bdd1b4b7183741884d36441c00c7ee66abf",
+    "analysis": "White field; large left-aligned grotesque title; restrained metadata low on page. Useful for quiet hierarchy, not a fixed deck structure.",
+    "rights": "Repo says code MIT, images/assets CC BY-NC-SA 4.0. Viewed privately, not redistributed or embedded.",
+    "role": "fallback technical design reference, not a Pinterest/Behance designer portfolio"
+  },
+  {
+    "title": "Creative Studio Pitch Deck / Fibrinosa Studios",
+    "url": "https://dribbble.com/shots/26065072-Creative-Studio-Pitch-Deck",
+    "image_url": "https://cdn.dribbble.com/userupload/44417180/file/0486ad336a30fb1b10c9483c909b663c.jpg",
+    "status": "discovered",
+    "visually_inspected": false,
+    "access_notes": "Search/web connector exposed metadata or text. Executor blocks designer domains. Full image bytes were not inspected. No compositional claim made from unseen images.",
+    "rights": "Unknown / all rights reserved; not embedded"
+  },
+  {
+    "title": "Corporate Pitch Deck Redesign / Raja Gnanasekaran",
+    "url": "https://www.behance.net/gallery/250128397/Corporate-Pitch-Deck-Redesign",
+    "image_url": null,
+    "status": "discovered",
+    "visually_inspected": false,
+    "access_notes": "Search/web connector exposed metadata or text. Executor blocks designer domains. Full image bytes were not inspected. No compositional claim made from unseen images.",
+    "rights": "Unknown / all rights reserved; not embedded"
+  },
+  {
+    "title": "Pinterest typography pin",
+    "url": "https://uk.pinterest.com/pin/typography--74027987610460425/",
+    "image_url": null,
+    "status": "discovered",
+    "visually_inspected": false,
+    "access_notes": "Search/web connector exposed metadata or text. Executor blocks designer domains. Full image bytes were not inspected. No compositional claim made from unseen images.",
+    "rights": "Unknown / all rights reserved; not embedded"
+  },
+  {
+    "title": "Dataland / Pentagram",
+    "url": "https://www.pentagram.com/work/dataland",
+    "image_url": null,
+    "status": "text_accessed",
+    "visually_inspected": false,
+    "access_notes": "Search/web connector exposed metadata or text. Executor blocks designer domains. Full image bytes were not inspected. No compositional claim made from unseen images.",
+    "rights": "Unknown / all rights reserved; not embedded"
+  },
+  {
+    "title": "Silver Linings / Pentagram",
+    "url": "https://www.pentagram.com/work/silver-linings",
+    "image_url": null,
+    "status": "text_accessed",
+    "visually_inspected": false,
+    "access_notes": "Search/web connector exposed metadata or text. Executor blocks designer domains. Full image bytes were not inspected. No compositional claim made from unseen images.",
+    "rights": "Unknown / all rights reserved; not embedded"
+  }
+]

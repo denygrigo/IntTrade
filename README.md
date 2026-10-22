@@ -2,6 +2,13 @@
 
 Reusable, project-scoped skills for Codex Cloud: deep research, distinct slide art direction, PowerPoint, Excel, PDF, Word, polished Russian/English writing and independent QA.
 
+The revised PptxGenJS pipeline has been exercised in the cloud runtime on three distinct
+six-slide briefs. See the [implementation report](studio/IMPLEMENTATION.ru.md),
+[PPTX/PDF examples and QA](studio/examples/acceptance/) and
+[runtime instructions](studio/README.ru.md). Acceptance is **PARTIAL**: artifact checks
+and author visual review ran; separate semantic review, unrestricted designer-image
+access and new-session automatic skill activation remain unverified.
+
 ## How to start (iPhone or Mac)
 1. In Codex, select repository `denygrigo/IntTrade` and a branch that contains this setup.
 2. Ask for your task in Russian. The root `AGENTS.md` routes to task-specific skills under `.agents/skills/`.
